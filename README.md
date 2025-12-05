@@ -1,2 +1,5 @@
-# IE4727-project-grp6
-ie4727
+# NTU-IE4727
+NTU IE4727 Group Project
+## Project Member<br>
+- Yoon Hyukjin
+- Beh Hoa Wing
