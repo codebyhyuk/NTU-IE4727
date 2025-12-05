@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - KEKE Dental</title>
+    
+    <!-- Icons (Remix Icon CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="assets/i18n/js/i18n.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="registration-container">
+        <!-- Header / Nav -->
+        <header class="site-header">
+            <div class="container nav">
+                <a class="brand" href="index.html">
+                    <i class="ri-shield-cross-line"></i>
+                    <span>KEKE Dental</span>
+                </a>
+                <select id="language-select">
+                    <option value="en">🇬🇧 English</option>
+                    <option value="cn">🇨🇳 中文</option>
+                    <option value="kr">🇰🇷 한국어</option>
+                </select>
+                <div class="nav-cta">
+                    <a class="btn btn-outline small" href="registration.html" data-i18n="nav.register">Register</a>
+                    <a class="btn small" href="login.html" data-i18n="nav.login">Login</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="registration-main">
+            <div class="registration-card">
+                <div class="registration-header">
+                    <div class="registration-icon">
+                        <i class="ri-user-add-line"></i>
+                    </div>
+                    <h1 class="registration-title" data-i18n="registration.title">Create Your Account</h1>
+                    <p class="registration-subtitle" data-i18n="registration.subtitle">
+                        Join KEKE Dental to book appointments<br>
+                        and manage your dental health
+                    </p>
+                </div>
+
+                <form id="registrationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName" class="form-label" data-i18n="registration.firstNameLabel">First Name</label>
+                            <div class="form-input-icon">
+                                <i class="ri-user-line icon"></i>
+                                <input type="text" id="firstName" name="firstName" class="form-input" data-i18n-placeholder="registration.firstNamePlaceholder" placeholder="Enter your first name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName" class="form-label" data-i18n="registration.lastNameLabel">Last Name</label>
+                            <div class="form-input-icon">
+                                <i class="ri-user-line icon"></i>
+                                <input type="text" id="lastName" name="lastName" class="form-input" data-i18n-placeholder="registration.lastNamePlaceholder" placeholder="Enter your last name" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label" data-i18n="registration.emailLabel">Email Address</label>
+                        <div class="form-input-icon">
+                            <i class="ri-mail-line icon"></i>
+                            <input type="email" id="email" name="email" class="form-input" data-i18n-placeholder="registration.emailPlaceholder" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label" data-i18n="registration.phoneLabel">Phone Number</label>
+                        <div class="form-input-icon">
+                            <i class="ri-phone-line icon"></i>
+                            <input type="tel" id="phone" name="phone" class="form-input" data-i18n-placeholder="registration.phonePlaceholder" placeholder="Enter your phone number" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dateOfBirth" class="form-label" data-i18n="registration.dobLabel">Date of Birth</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender" class="form-label" data-i18n="registration.genderLabel">Gender</label>
+                        <select id="gender" name="gender" class="form-input" required>
+                            <option value="" data-i18n="registration.selectGender">Select Gender</option>
+                            <option value="male" data-i18n="registration.male">Male</option>
+                            <option value="female" data-i18n="registration.female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label" data-i18n="registration.addressLabel">Address (Optional)</label>
+                        <div class="form-input-icon">
+                            <i class="ri-map-pin-line icon"></i>
+                            <textarea id="address" name="address" class="form-input" rows="3" data-i18n-placeholder="registration.addressPlaceholder" placeholder="Enter your address"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label" data-i18n="registration.passwordLabel">Password</label>
+                        <div class="form-input-icon">
+                            <i class="ri-lock-line icon"></i>
+                            <input type="password" id="password" name="password" class="form-input" data-i18n-placeholder="registration.passwordPlaceholder" placeholder="Enter your password" required>
+                        </div>
+                        <div class="password-requirements" data-i18n="registration.passwordRequirementsLabel">
+                            Must be at least 8 characters long
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword" class="form-label" data-i18n="registration.confirmPasswordLabel">Confirm Password</label>
+                        <div class="form-input-icon">
+                            <i class="ri-lock-line icon"></i>
+                            <input type="password" id="confirmPassword" name="confirmPassword" class="form-input" data-i18n-placeholder="registration.confirmPasswordPlaceholder" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" data-i18n="registration.createAccount">Create Account</button>
+                </form>
+
+                <div class="login-link">
+                    <span data-i18n="registration.alreadyHaveAccount">Already have an account?</span> <a href="login.html" data-i18n="registration.signInHere">Sign in here</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

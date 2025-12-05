@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patient Dashboard</title>
+
+    <!-- Icons (Remix Icon CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="patient.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../assets/i18n/js/i18n.js" defer></script>
+    <script src="../script.js" defer></script>
+    <script src="patient.js" defer></script>
+</head>
+
+<body>
+    <!-- Header / Nav -->
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="../index.html">
+                <i class="ri-shield-cross-line"></i>
+                <span>KEKE Dental</span>
+            </a>
+            <select id="language-select">
+                <option value="en">🇬🇧 English</option>
+                <option value="cn">🇨🇳 中文</option>
+                <option value="kr">🇰🇷 한국어</option>
+            </select>
+            <nav class="nav-links" id="navLinks">
+                <button onclick="logout()" class="btn btn-outline small" data-i18n="nav.logout">Logout</button>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Dashboard Header -->
+    <div class="dashboard-header">
+        <h1 data-i18n="patientDashboard.welcome"></h1>
+        <p data-i18n="patientDashboard.subtitle">Manage your appointments and view your dental care history</p>
+        <div class="user-info" style="margin-top: 10px; font-size: 0.9em; color: #666;">
+            <span><i class="ri-mail-line"></i> <span data-user-field="email">Loading...</span></span>
+            <span style="margin-left: 20px;"><i class="ri-phone-line"></i> <span data-user-field="phone">Loading...</span></span>
+        </div>
+    </div>
+
+    <!-- Main Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Left Side: Our Doctors -->
+        <section class="doctors-section" id="doctors">
+        <div class="container">
+            <h2 data-i18n="patientDashboard.doctorsContainerTitle"></h2>
+            <div class="doctors-controls">
+                <div class="search-filter-row">
+                    <div class="search-box">
+                        <i class="ri-search-line"></i>
+                        <input type="text" data-i18n-placeholder="patientDashboard.searchDoctorsPlaceholder" id="doctorSearch">
+                    </div>
+                    <div class="filter-dropdown">
+                        <i class="ri-filter-line"></i>
+                        <select id="specialtyFilter">
+                            <option value="all" data-i18n="patientDashboard.specialitiesOptions.all">All Specialties</option>
+                            <option value="general" data-i18n="patientDashboard.specialitiesOptions.general">General Dentistry</option>
+                            <option value="surgery" data-i18n="patientDashboard.specialitiesOptions.surgery">Oral Surgery</option>
+                            <option value="orthodontics" data-i18n="patientDashboard.specialitiesOptions.orthodontics">Orthodontics</option>
+                            <option value="pediatric" data-i18n="patientDashboard.specialitiesOptions.pediatric">Pediatric Dentistry</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- doctors choices -->
+            <div class="doctors-grid" id="doctorsGrid"><!-- Doctor cards will be loaded dynamically from database --></div>
+        </div>
+        </section>
+
+        <!-- Right Side: Patient Dashboard -->
+        <section class="patient-dashboard">
+            <div class="dashboard-content">
+            <!-- Tab Navigation -->
+            <div class="tab-navigation">
+                <button class="tab-btn active" data-tab="book-appointment" data-i18n="patientDashboard.bookAppointment">
+                    <i class="ri-calendar-line"></i>
+                    Book Appointment
+                </button>
+                <button class="tab-btn" data-tab="booking-history" data-i18n="patientDashboard.bookingHistory">
+                    <i class="ri-history-line"></i>
+                    Booking History
+                </button>
+            </div>
+
+            <!-- Book Appointment Tab -->
+            <div class="tab-content active" id="book-appointment">
+                <div class="appointment-booking">                    
+                    <form id="appointmentForm" class="appointment-form">
+                        <table class="appointment-table">
+                            <!-- Select Doctor -->
+                            <tr>
+                                <th class="form-header" data-i18n="patientDashboard.selectDoctor">
+                                    <i class="ri-user-line"></i>
+                                    Select Doctor
+                                </th>
+                                <td>
+                                    <select id="doctorSelect" name="doctor" class="form-input" required>
+                                        <option value="" data-i18n="patientDashboard.doctorSelect.choose">Choose a doctor</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Appointment Type -->
+                            <tr>
+                                <th class="form-header" data-i18n="patientDashboard.appointmentTypeForm">
+                                    <i class="ri-clipboard-line"></i>
+                                    Appointment Type
+                                </th>
+                                <td>
+                                    <select id="appointmentType" name="appointmentType" class="form-input" required>
+                                        <option value="choose" data-i18n="patientDashboard.appointmentTypeSelect.choose">Select appointment type</option>
+                                        <option value="consultation" data-i18n="patientDashboard.appointmentTypeSelect.consultation">Consultation</option>
+                                        <option value="cleaning" data-i18n="patientDashboard.appointmentTypeSelect.cleaning">Cleaning & Checkup</option>
+                                        <option value="filling" data-i18n="patientDashboard.appointmentTypeSelect.filling">Filling</option>
+                                        <option value="extraction" data-i18n="patientDashboard.appointmentTypeSelect.extraction">Tooth Extraction</option>
+                                        <option value="orthodontic" data-i18n="patientDashboard.appointmentTypeSelect.orthodontic">Orthodontic Treatment</option>
+                                        <option value="emergency" data-i18n="patientDashboard.appointmentTypeSelect.emergency">Emergency Care</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Preferred Date -->
+                            <tr>
+                                <th class="form-header" data-i18n="patientDashboard.preferredDateLabel">
+                                    <i class="ri-calendar-2-line"></i>
+                                    Preferred Date
+                                </th>
+                                <td>
+                                    <input type="date" id="appointmentDate" name="date" class="form-input" required>
+                                </td>
+                            </tr>
+
+                            <!-- Preferred Time -->
+                            <tr>
+                                <th class="form-header" data-i18n="patientDashboard.preferredTimeLabel">
+                                    <i class="ri-time-line"></i>
+                                    Preferred Time
+                                </th>
+                                <td>
+                                    <select id="appointmentTime" name="time" class="form-input" required>
+                                        <option value="" data-i18n="patientDashboard.selectedTime">Select time</option>
+                                        <option value="09:00">9:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="14:00">2:00 PM</option>
+                                        <option value="15:00">3:00 PM</option>
+                                        <option value="16:00">4:00 PM</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <!-- Additional Notes -->
+                            <tr>
+                                <th class="form-header" data-i18n="patientDashboard.additionalNotesLabel">
+                                    Additional Notes (Optional)
+                                </th>
+                                <td>
+                                    <textarea id="appointmentNotes" name="notes" class="form-input" rows="4" data-i18n-placeholder="patientDashboard.additionalNotesLabelPlaceholder"
+                                        placeholder="Any specific concerns or information the doctor should know..."></textarea>
+                                </td>
+                            </tr>
+
+                            <!-- Submit Button -->
+                            <tr>
+                                <td colspan="2" class="submit-row">
+                                    <button type="submit" class="btn btn-primary" data-i18n="patientDashboard.bookAppointmentButton">
+                                        <i class="ri-calendar-check-line"></i>
+                                        Book Appointment
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Booking History Tab -->
+            <div class="tab-content" id="booking-history">
+                <div class="booking-history">
+                    <!-- Appointments List -->
+                    <div class="appointments-list" id="appointmentsList">
+                        <!-- Appointment cards will be loaded dynamically from database -->
+                    </div>
+
+                    <!-- Empty State (show when no appointments) -->
+                    <div class="empty-state" id="emptyState" style="display: none;">
+                        <div class="empty-icon">
+                            <i class="ri-calendar-line"></i>
+                        </div>
+                        <h3 data-i18n="patientDashboard.emptyBookingHistory.title">No appointments found</h3>
+                        <p data-i18n="patientDashboard.emptyBookingHistory.subtitle">You haven't booked any appointments yet. Start by booking your first appointment!</p>
+                        <button class="btn btn-primary" onclick="switchTab('book-appointment')" data-i18n="patientDashboard.emptyBookingHistory.button">
+                            <i class="ri-add-line"></i>
+                            Book Your First Appointment
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> <!-- End dashboard-layout -->
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p data-i18n="footer.copyright">© 2025 KEKE Dental. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer.privacy">Privacy</a>
+                <a href="#" data-i18n="footer.terms">Terms</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

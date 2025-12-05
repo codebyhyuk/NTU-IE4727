@@ -1,0 +1,232 @@
+{
+    "nav": {
+        "home": "首页",
+        "doctors": "我们的医生",
+        "book": "预约",
+        "register": "注册",
+        "login": "登录",
+        "logout": "登出"
+    },
+    "hero": {
+        "title": "您的<span class=\"accent\">微笑</span>是我们的<span class=\"accent\">优先考虑</span>",
+        "subtitle": "为全家提供世界级牙科护理，配备最先进的技术和温柔的护理——从常规检查到高级治疗。",
+        "bookAppointment": "预约",
+        "meetDoctors": "认识我们的医生",
+        "stats": {
+        "happyPatients": "满意患者",
+        "yearsExperience": "年经验",
+        "emergencyCare": "急诊护理"
+        }
+    },
+    "services": {
+        "title": "我们的服务",
+        "description": "为全家提供全面的牙科护理，配备最先进的技术和温柔的护理。",
+        "general": {
+        "title": "综合牙科",
+        "description": "常规清洁、填充和预防护理。"
+        },
+        "surgery": {
+        "title": "口腔外科",
+        "description": "拔牙、植入物和外科手术。"
+        },
+        "orthodontics": {
+        "title": "正畸学",
+        "description": "牙套、隐适美和微笑矫正。"
+        },
+        "emergency": {
+        "title": "急诊护理",
+        "description": "24/7急诊牙科服务。"
+        }
+    },
+    "whyChoose": {
+        "title": "为什么选择KEKE牙科？",
+        "expertTeam": {
+        "title": "专家团队",
+        "description": "经验丰富的牙医和牙科保健师致力于提供最高质量的护理。"
+        },
+        "modernTech": {
+        "title": "现代技术",
+        "description": "最先进的设备和最新技术，提供舒适、有效的治疗。"
+        },
+        "flexibleScheduling": {
+        "title": "灵活预约",
+        "description": "方便的预约时间，包括晚上和周末，适合您的日程安排。"
+        },
+        "scheduleVisit": "安排您的访问",
+        "stats": {
+        "happyPatients": "满意患者",
+        "yearsExperience": "年经验",
+        "successRate": "成功率",
+        "emergencyCare": "急诊护理"
+        }
+    },
+    "doctors": {
+        "title": "认识我们的专家团队",
+        "subtitle": "我们经验丰富的牙医致力于在舒适友好的环境中为您提供最高质量的牙科护理。",
+        "searchPlaceholder": "按姓名或专业搜索医生...",
+        "filterAll": "全部",
+        "filterGeneral": "综合牙科",
+        "filterSurgery": "口腔外科",
+        "filterOrthodontics": "正畸学",
+        "filterPediatric": "儿童牙科",
+        "availableToday": "今天可预约",
+        "nextWeek": "下周",
+        "bookAppointment": "预约",
+        "specialties": {
+        "general": "综合牙科",
+        "surgery": "口腔外科"
+        },
+        "locations": {
+        "mainClinic": "主诊所",
+        "surgeryCenter": "外科中心"
+        },
+        "experience": {
+        "sixtynine": "69年经验"
+        },
+        "descriptions": {
+        "beh": "白医生专门通过观看YouTube上的牙科教程来修复您的牙齿。相信他就对了。"
+        }
+    },
+    "contact": {
+        "title": "联系我们",
+        "subtitle": "准备预约了吗？今天就联系我们！",
+        "phone": {
+        "title": "电话",
+        "number": "(555) 123-4567"
+        },
+        "email": {
+        "title": "邮箱",
+        "address": "info@kekedental.com"
+        },
+        "location": {
+        "title": "地址",
+        "address": "123 Main Street, City, 12345"
+        },
+        "bookNow": "立即预约"
+    },
+    "footer": {
+        "copyright": "© 2025 KEKE 牙科。版权所有。",
+        "privacy": "隐私",
+        "terms": "条款"
+    },
+    "login": {
+        "title": "欢迎回来",
+        "subtitle": "登录到您的KEKE牙科帐户",
+        "emailLabel": "邮箱地址",
+        "emailPlaceholder": "请输入您的邮箱",
+        "passwordLabel": "密码",
+        "passwordPlaceholder": "请输入您的密码",
+        "rememberMe": "记住我",
+        "forgotPassword": "忘记密码？",
+        "signIn": "登录",
+        "noAccount": "还没有账户？",
+        "signUpHere": "在此注册"
+    },
+    "registration": {
+        "title": "创建您的账户",
+        "subtitle": "加入KEKE牙科，预约挂号并管理您的牙齿健康",
+        "firstNameLabel": "名字",
+        "firstNamePlaceholder": "请输入您的名字",
+        "lastNameLabel": "姓氏",
+        "lastNamePlaceholder": "请输入您的姓氏",
+        "emailLabel": "邮箱地址",
+        "emailPlaceholder": "请输入您的邮箱",
+        "phoneLabel": "电话号码",
+        "phonePlaceholder": "请输入您的电话号码",
+        "dobLabel": "出生日期",
+        "genderLabel": "性别",
+        "selectGender": "选择性别",
+        "male": "男",
+        "female": "女",
+        "addressLabel": "地址（可选）",
+        "addressPlaceholder": "请输入您的地址",
+        "passwordLabel": "密码",
+        "passwordPlaceholder": "请输入您的密码",
+        "passwordRequirementsLabel": "密码至少需要8个字符",
+        "confirmPasswordLabel": "确认密码",
+        "confirmPasswordPlaceholder": "请确认您的密码",
+        "createAccount": "创建账户",
+        "alreadyHaveAccount": "已有账户？",
+        "signInHere": "在此登录"
+    },
+    "patientDashboard": {
+        "welcome": "欢迎，{{name}}！",
+        "subtitle": "管理您的预约并查看您的牙科护理历史",
+        "doctorsContainerTitle": "我们的医生",
+        "searchDoctorsPlaceholder": "按姓名或专业搜索医生...",
+        "specialitiesOptions": {
+            "all": "所有专业",
+            "general": "综合牙科",
+            "surgery": "口腔外科",
+            "orthodontics": "正畸学",
+            "pediatric": "儿童牙科"
+            },
+        "bookAppointment": "预约",
+        "bookingHistory": "预约历史",
+        "selectDoctor": "选择医生",
+        "doctorSelect": {
+            "choose": "请选择您要的医生"
+        },
+        "appointmentTypeForm": "预约类型",
+        "appointmentTypeSelect": {
+            "choose": "选择预约类型",
+            "consultation": "咨询",
+            "cleaning": "清洁与检查",
+            "filling": "填充",
+            "extraction": "拔牙",
+            "orthodontic": "正畸治疗",
+            "emergency": "急救"
+        },
+        "preferredDateLabel": "首选日期",
+        "preferredTimeLabel": "首选时间",
+        "selectedTime": "选择时间",
+        "additionalNotesLabel": "附加说明（可选）",
+        "additionalNotesLabelPlaceholder": "任何特定的关注点或医生应该知道的信息...",
+        "bookAppointmentButton": "预约",
+        "emptyBookingHistory": {
+            "title": "没有预约记录",
+            "subtitle": "您还没有预约任何挂号。请先预约您的第一次挂号！",
+            "button": "预约您的第一次挂号"
+        }
+    },
+    "doctorDashboard": {
+        "welcome": "欢迎，{{name}}！",
+        "subtitle": "管理您的预约并查看您的牙科护理历史",
+        "calendarLegend": {
+            "Scheduled": "已安排",
+            "Confirmed": "已确认",
+            "Completed": "已完成",
+            "Cancelled": "已取消"
+        },
+        "appointmentsSection": {
+            "title": "您的预约",
+            "statusFilter": {
+                "all": "所有状态",
+                "scheduled": "已安排",
+                "confirmed": "已确认",
+                "completed": "已完成",
+                "cancelled": "已取消"
+            },
+            "dateFilter": {
+                "all": "所有日期",
+                "today": "今日",
+                "upcoming": "即将到来",
+                "past": "过去"
+            }
+        },
+        "months": [
+            "一月",
+            "二月",
+            "三月",
+            "四月",
+            "五月",
+            "六月",
+            "七月",
+            "八月",
+            "九月",
+            "十月",
+            "十一月",
+            "十二月"
+        ]
+    }
+}

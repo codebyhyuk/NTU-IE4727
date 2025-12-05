@@ -1,0 +1,231 @@
+{
+    "nav": {
+        "home": "홈",
+        "doctors": "의료진 소개",
+        "book": "예약하기",
+        "register": "회원가입",
+        "login": "로그인",
+        "logout": "Logout"
+    },
+    "hero": {
+        "title": "당신의 <span class=\"accent\">미소</span>가 우리의 <span class=\"accent\">우선순위</span>입니다",
+        "subtitle": "정기 검진부터 고급 치료까지 최첨단 기술을 통한 치료와 지속적인 관리로 전 가족을 위한 세계적 수준의 치과 진료를 제공합니다.",
+        "bookAppointment": "예약하기",
+        "meetDoctors": "의료진 소개",
+        "stats": {
+        "happyPatients": "만족한 환자 수",
+        "yearsExperience": "년 경력",
+        "emergencyCare": "응급 치료"
+        }
+    },
+    "services": {
+        "title": "우리의 서비스",
+        "description": "최첨단 기술과 부드러운 치료로 전 가족을 위한 포괄적인 치과 진료를 제공합니다.",
+        "general": {
+        "title": "일반 치과",
+        "description": "정기 검진 및 예방 치료."
+        },
+        "surgery": {
+        "title": "구강안면외과",
+        "description": "발치 및 임플란트"
+        },
+        "orthodontics": {
+        "title": "보철과",
+        "description": "교정기, 인비절라인, 무삭제 라미네이트."
+        },
+        "emergency": {
+        "title": "응급 치료",
+        "description": "24/7 응급 치료 서비스 이용 가능."
+        }
+    },
+    "whyChoose": {
+        "title": "왜 KEKE 치과를 선택해야 할까요?",
+        "expertTeam": {
+        "title": "전문적인 의료진",
+        "description": "최상의 진료경험을 제공하는 경험 많은 의료진."
+        },
+        "modernTech": {
+        "title": "현대적 기술",
+        "description": "편안하고 효과적인 치료를 위한 최첨단 장비와 최신 기법."
+        },
+        "flexibleScheduling": {
+        "title": "유연한 운영 시간",
+        "description": "저녁과 주말을 포함한 유연한 운영 시간."
+        },
+        "scheduleVisit": "진료 예약하기",
+        "stats": {
+        "happyPatients": "만족한 환자 수",
+        "yearsExperience": "년 경력",
+        "successRate": "성공률",
+        "emergencyCare": "응급 치료"
+        }
+    },
+    "doctors": {
+        "title": "우리의 전문적인 의료진을 만나보세요",
+        "subtitle": "경험 많은 원장님과 편안하고 친근한 환경에서 최상의 치과 진료를 제공하는 데 전념하고 있습니다.",
+        "searchPlaceholder": "이름이나 전문 분야로 의사 검색...",
+        "filterAll": "전체",
+        "filterGeneral": "일반 치과",
+        "filterSurgery": "구강안면외과",
+        "filterOrthodontics": "보철과",
+        "filterPediatric": "소아 치과",
+        "availableToday": "오늘 예약 가능",
+        "nextWeek": "다음 주",
+        "bookAppointment": "예약하기",
+        "specialties": {
+        "general": "일반 치과",
+        "surgery": "구강안면외과"
+        },
+        "locations": {
+        "mainClinic": "메인 클리닉",
+        "surgeryCenter": "수술 센터"
+        },
+        "experience": {
+        "sixtynine": "69년 경력"
+        },
+        "descriptions": {
+        "beh": "Beh 원장님은 YouTube의 치과 튜토리얼을 보고 환자분의 치아를 고치는 것을 전문으로 합니다. 그냥 믿어보세요."
+        }
+    },
+    "contact": {
+        "title": "연락하기",
+        "subtitle": "예약하실 준비가 되셨나요? 오늘 연락주세요!",
+        "phone": {
+        "title": "전화",
+        "number": "(555) 123-4567"
+        },
+        "email": {
+        "title": "이메일",
+        "address": "info@kekedental.com"
+        },
+        "location": {
+        "title": "위치",
+        "address": "123 Main Street, City, 12345"
+        },
+        "bookNow": "지금 예약하기"
+    },
+    "footer": {
+        "copyright": "© 2025 KEKE 치과.",
+        "privacy": "개인정보",
+        "terms": "약관"
+    },
+    "login": {
+        "title": "환영합니다",
+        "subtitle": "KEKE Dental 로그인하기",
+        "emailLabel": "이메일 주소",
+        "emailPlaceholder": "이메일 주소를 입력하세요",
+        "passwordLabel": "비밀번호",
+        "passwordPlaceholder": "비밀번호를 입력하세요",
+        "rememberMe": "간편 로그인",
+        "forgotPassword": "비밀번호 찾기",
+        "signIn": "로그인",
+        "noAccount": "계정이 없으신가요?",
+        "signUpHere": "회원가입하기"
+    },
+    "registration": {
+        "title": "회원가입",
+        "subtitle": "KEKE Dental 회원가입하기",
+        "firstNameLabel": "이름",
+        "firstNamePlaceholder": "이름을 입력하세요",
+        "lastNameLabel": "성",
+        "lastNamePlaceholder": "성을 입력하세요",
+        "emailLabel": "이메일 주소",
+        "emailPlaceholder": "이메일 주소를 입력하세요",
+        "phoneLabel": "연락처",
+        "phonePlaceholder": "연락처를 입력하세요",
+        "dobLabel": "생년월일",
+        "genderLabel": "성별",
+        "selectGender": "선택",
+        "male": "남성",
+        "female": "여성",
+        "addressLabel": "주소 (선택사항)",
+        "addressPlaceholder": "주소를 입력하세요",
+        "passwordLabel": "비밀번호",
+        "passwordPlaceholder": "비밀번호를 입력하세요",
+        "passwordRequirements": "최소 8자 이상이어야 합니다",
+        "confirmPasswordLabel": "비밀번호 재입력",
+        "confirmPasswordPlaceholder": "비밀번호를 확인해주세요",
+        "createAccount": "회원가입",
+        "alreadyHaveAccount": "이미 계정이 있으신가요?</span> <a href=\"login.html\" data-i18n=\"registration.signInHere\">로그인하기</a>"
+    },
+    "patientDashboard": {
+        "welcome": "환영합니다, {{name}}!",
+        "subtitle": "예약 관리 및 예약 내역 현황",
+        "doctorsContainerTitle": "의료진 소개",
+        "searchDoctorsPlaceholder": "이름이나 전문 분야로 의사 검색...",
+        "specialitiesOptions": {
+            "all": "전체",
+            "general": "일반 치과",
+            "surgery": "구강안면외과",
+            "orthodontics": "보철과",
+            "pediatric": "소아 치과"
+            },
+        "bookAppointment": "예약하기",
+        "bookingHistory": "예약 내역",
+        "selectDoctor": "의료진 선택",
+        "doctorSelect": {
+            "choose": "의료진을 선택하세요"
+        },
+        "appointmentTypeForm": "예약 목적",
+        "appointmentTypeSelect": {
+            "choose": "예약 목적을 고르세요",
+            "consultation": "진료",
+            "cleaning": "스케일링 및 정기 검진",
+            "filling": "치아 충전",
+            "extraction": "발치",
+            "orthodontic": "보철과 치료",
+            "emergency": "응급 치료"
+        },
+        "preferredDateLabel": "희망 날짜",
+        "preferredTimeLabel": "희망 시간",
+        "selectedTime": "시간을 고르세요",
+        "additionalNotesLabel": "추가 사항 (선택 사항)",
+        "additionalNotesLabelPlaceholder": "의료진이 사전에 알아야할 정보가 있다면 작성해주세요",
+        "bookAppointmentButton": "예약하기",
+        "emptyBookingHistory": {
+            "title": "예약 내역 없음",
+            "subtitle": "예약 내역이 없습니다. 초진 예약이 필요합니다!",
+            "button": "초진 예약하기"
+        }
+    },
+        "doctorDashboard": {
+        "welcome": "환영합니다, Dr. {{name}}!",
+        "subtitle": "진료 일정 관리하기",
+        "calendarLegend": {
+            "Scheduled": "예약 완료",
+            "Confirmed": "예약 확정",
+            "Completed": "진료 완료",
+            "Cancelled": "예약 취소"
+        },
+        "appointmentsSection": {
+            "title": "진료 일정",
+            "statusFilter": {
+                "all": "상태",
+                "scheduled": "예약 완료",
+                "confirmed": "예약 확정",
+                "completed": "진료 완료",
+                "cancelled": "예약 취소"
+            },
+            "dateFilter": {
+                "all": "전체 일자",
+                "today": "오늘",
+                "upcoming": "예정된 일자",
+                "past": "지난 일자"
+            }
+        },
+        "months": [
+            "1월",
+            "2월",
+            "3월",
+            "4월",
+            "5월",
+            "6월",
+            "7월",
+            "8월",
+            "9월",
+            "10월",
+            "11월",
+            "12월"
+        ]
+    }
+}

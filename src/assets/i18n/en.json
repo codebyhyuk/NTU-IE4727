@@ -1,0 +1,232 @@
+{
+    "nav": {
+        "home": "Home",
+        "doctors": "Our Doctors",
+        "book": "Book Appointment",
+        "register": "Register",
+        "login": "Login",
+        "logout": "Logout"
+    },
+    "hero": {
+        "title": "Your <span class=\"accent\">Smile</span> is Our <span class=\"accent\">Priority</span>",
+        "subtitle": "World-class dental care for the whole family with state-of-the-art technology and gentle care—from routine checkups to advanced treatments.",
+        "bookAppointment": "Book Appointment",
+        "meetDoctors": "Meet Our Doctors",
+        "stats": {
+        "happyPatients": "Happy Patients",
+        "yearsExperience": "Years Experience",
+        "emergencyCare": "Emergency Care"
+        }
+    },
+    "services": {
+        "title": "Our Services",
+        "description": "Comprehensive dental care for the whole family with state-of-the-art technology and gentle care.",
+        "general": {
+        "title": "General Dentistry",
+        "description": "Regular checkups, cleanings, and preventive care to maintain your oral health."
+        },
+        "surgery": {
+        "title": "Oral Surgery",
+        "description": "Extractions, implants, and surgical procedures."
+        },
+        "orthodontics": {
+        "title": "Orthodontics",
+        "description": "Braces, Invisalign, and smile correction treatments."
+        },
+        "emergency": {
+        "title": "Emergency Care",
+        "description": "24/7 emergency dental services for urgent care needs."
+        }
+    },
+    "whyChoose": {
+        "title": "Why Choose KEKE Dental?",
+        "expertTeam": {
+        "title": "Expert Team",
+        "description": "Experienced dentists and hygienists committed to providing the highest quality care."
+        },
+        "modernTech": {
+        "title": "Modern Technology",
+        "description": "State-of-the-art equipment and latest techniques for comfortable, effective treatments."
+        },
+        "flexibleScheduling": {
+        "title": "Flexible Scheduling",
+        "description": "Convenient appointment times including evenings and weekends to fit your schedule."
+        },
+        "scheduleVisit": "Schedule Your Visit",
+        "stats": {
+        "happyPatients": "Happy Patients",
+        "yearsExperience": "Years Experience",
+        "successRate": "Success Rate",
+        "emergencyCare": "Emergency Care"
+        }
+    },
+    "doctors": {
+        "title": "Meet Our Expert Team",
+        "subtitle": "Our experienced dentists are dedicated to providing you with the highest quality dental care in a comfortable and friendly environment.",
+        "searchPlaceholder": "Search doctors by name or specialty...",
+        "filterAll": "All",
+        "filterGeneral": "General Dentistry",
+        "filterSurgery": "Oral Surgery",
+        "filterOrthodontics": "Orthodontics",
+        "filterPediatric": "Pediatric Dentistry",
+        "availableToday": "Available Today",
+        "nextWeek": "Next Week",
+        "bookAppointment": "Book Appointment",
+        "specialties": {
+        "general": "General Dentistry",
+        "surgery": "Oral Surgery"
+        },
+        "locations": {
+        "mainClinic": "Main Clinic",
+        "surgeryCenter": "Surgery Center"
+        },
+        "experience": {
+        "sixtynine": "69 years experience"
+        },
+        "descriptions": {
+        "beh": "Dr. Beh specializes in fixing your teeth by watching Dental tutorials on YouTube. Just trust him bro."
+        }
+    },
+    "contact": {
+        "title": "Get In Touch",
+        "subtitle": "Ready to schedule your appointment? Contact us today!",
+        "phone": {
+        "title": "Phone",
+        "number": "(555) 123-4567"
+        },
+        "email": {
+        "title": "Email",
+        "address": "info@kekedental.com"
+        },
+        "location": {
+        "title": "Location",
+        "address": "123 Main Street, City, 12345"
+        },
+        "bookNow": "Book Your Appointment Now"
+    },
+    "footer": {
+        "copyright": "© 2025 KEKE Dental. All rights reserved.",
+        "privacy": "Privacy",
+        "terms": "Terms"
+    },
+    "login": {
+        "title": "Welcome Back",
+        "subtitle": "Sign in to your KEKE Dental account",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "rememberMe": "Remember me",
+        "forgotPassword": "Forgot password?",
+        "signIn": "Sign In",
+        "noAccount": "Don't have an account?",
+        "signUpHere": "Sign up here"
+    },
+    "registration": {
+        "title": "Create Your Account",
+        "subtitle": "Join KEKE Dental to book appointments and manage your dental health",
+        "firstNameLabel": "First Name",
+        "firstNamePlaceholder": "Enter your first name",
+        "lastNameLabel": "Last Name",
+        "lastNamePlaceholder": "Enter your last name",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "Enter your email",
+        "phoneLabel": "Phone Number",
+        "phonePlaceholder": "Enter your phone number",
+        "dobLabel": "Date of Birth",
+        "genderLabel": "Gender",
+        "selectGender": "Select Gender",
+        "male": "Male",
+        "female": "Female",
+        "addressLabel": "Address (Optional)",
+        "addressPlaceholder": "Enter your address",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "passwordRequirementsLabel": "Must be at least 8 characters long",
+        "confirmPasswordLabel": "Confirm Password",
+        "confirmPasswordPlaceholder": "Confirm your password",
+        "createAccount": "Create Account",
+        "alreadyHaveAccount": "Already have an account?",
+        "signInHere": "Sign in here"
+    },
+    "patientDashboard": {
+        "welcome": "Welcome, {{name}}!",
+        "subtitle": "Manage your appointments and view your dental care history",
+        "doctorsContainerTitle": "Our Doctors",
+        "searchDoctorsPlaceholder": "Search doctors by name or specialty...",
+        "specialitiesOptions": {
+            "all": "All Specialties",
+            "general": "General Dentistry",
+            "surgery": "Oral Surgery",
+            "orthodontics": "Orthodontics",
+            "pediatric": "Pediatric Dentistry"
+            },
+        "bookAppointment": "Book Appointment",
+        "bookingHistory": "Booking History",
+        "selectDoctor": "Select Doctor",
+        "doctorSelect": {
+            "choose": "Choose a doctor"
+        },
+        "appointmentTypeForm": "Appointment Type",
+        "appointmentTypeSelect": {
+            "choose": "Select appointment type",
+            "consultation": "Consultation",
+            "cleaning": "Cleaning & Checkup",
+            "filling": "Filling",
+            "extraction": "Tooth Extraction",
+            "orthodontic": "Orthodontic Treatment",
+            "emergency": "Emergency Care"
+        },
+        "preferredDateLabel": "Preferred Date",
+        "preferredTimeLabel": "Preferred Time",
+        "selectedTime": "Select Time",
+        "additionalNotesLabel": "Additional Notes (Optional)",
+        "additionalNotesLabelPlaceholder": "Any specific concerns or information the doctor should know...",
+        "bookAppointmentButton": "Book Appointment",
+        "emptyBookingHistory": {
+            "title": "No appointments found",
+            "subtitle": "You haven't booked any appointments yet. Start by booking your first appointment!",
+            "button": "Book Your First Appointment"
+        }
+    },
+    "doctorDashboard": {
+        "welcome": "Welcome, Dr. {{name}}!",
+        "subtitle": "Manage your appointments and view your dental care history",
+        "calendarLegend": {
+            "Scheduled": "Scheduled",
+            "Confirmed": "Confirmed",
+            "Completed": "Completed",
+            "Cancelled": "Cancelled"
+        },
+        "appointmentsSection": {
+            "title": "Your Appointments",
+            "statusFilter": {
+                "all": "All Status",
+                "scheduled": "Scheduled",
+                "confirmed": "Confirmed",
+                "completed": "Completed",
+                "cancelled": "Cancelled"
+            },
+            "dateFilter": {
+                "all": "All Dates",
+                "today": "Today",
+                "upcoming": "Upcoming",
+                "past": "Past"
+            }
+        },
+        "months": [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+        ]
+    }
+}

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KEKE Dental – Your Smile is Our Priority</title>
+
+    <!-- Icons (Remix Icon CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script src="assets/i18n/js/i18n.js" defer></script>
+</head>
+
+<body>
+    <!-- Header / Nav -->
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="#">
+                <i class="ri-shield-cross-line"></i>
+                <span>KEKE Dental</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" data-i18n="nav.home">Home</a>
+                <a href="#doctors" data-i18n="nav.doctors">Our Doctors</a>
+                <a href="#book" data-i18n="nav.book">Book Appointment</a>
+            </nav>
+            
+            <select id="language-select">
+                <option value="en">🇬🇧 English</option>
+                <option value="cn">🇨🇳 中文</option>
+                <option value="kr">🇰🇷 한국어</option>
+            </select>
+
+            <div class="nav-cta">
+                    <a class="btn btn-outline small" href="registration.html" target="_blank" rel="noopener noreferrer" data-i18n="nav.register">Register</a>
+                    <a class="btn small" href="login.html" target="_blank" rel="noopener noreferrer" data-i18n="nav.login">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home" aria-label="Dental hero">
+        <div class="hero-media" role="img" aria-label="Modern dental clinic background"></div>
+        <div class="container hero-content">
+            <h1 data-i18n="hero.title">Your <span class="accent">Smile</span> is Our <span class="accent">Priority</span></h1>
+            <p class="subtitle" data-i18n="hero.subtitle">
+                World-class dental care for the whole family with state-of-the-art technology
+                and gentle care—from routine checkups to advanced treatments.
+            </p>
+            <div class="hero-actions">
+                <a href="login.html" target="_blank" rel="noopener noreferrer" class="btn" onclick="alert('Please log in to book an appointment.')" data-i18n="hero.bookAppointment">Book Appointment</a>
+                <a href="#doctors" class="btn btn-light"><i class="ri-user-smile-line"></i> <span data-i18n="hero.meetDoctors">Meet Our Doctors</span></a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                <div class="stat-value" data-count="1000">0</div>
+                <div class="stat-label" data-i18n="hero.stats.happyPatients">Happy Patients</div>
+                </div>
+                <div class="stat">
+                <div class="stat-value" data-count="15">0</div>
+                <div class="stat-label" data-i18n="hero.stats.yearsExperience">Years Experience</div>
+                </div>
+                <div class="stat">
+                <div class="stat-value" data-count="24">0/7</div>
+                <div class="stat-label" data-i18n="hero.stats.emergencyCare">Emergency Care</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-fade"></div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services.title">Our Services</h2>
+            <p class="section-desc" data-i18n="services.description">
+                Comprehensive dental care for the whole family with state-of-the-art technology
+                and gentle care.
+            </p>
+
+            <div class="cards grid-4">
+                <article class="card">
+                    <!-- <div class="icon"><i class="ri-tooth-line"></i></div> -->
+                    <div class="icon"><img src="assets/tooth-line.png" alt="Tooth icon" /></div>
+                    <h3 data-i18n="services.general.title">General Dentistry</h3>
+                    <p data-i18n="services.general.description">Routine cleanings, fillings, and preventive care.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon"><i class="ri-scissors-2-line"></i></div>
+                    <h3 data-i18n="services.surgery.title">Oral Surgery</h3>
+                    <p data-i18n="services.surgery.description">Extractions, implants, and surgical procedures.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon"><i class="ri-braces-line"></i></div>
+                    <h3 data-i18n="services.orthodontics.title">Orthodontics</h3>
+                    <p data-i18n="services.orthodontics.description">Braces, Invisalign, and smile correction.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon"><i class="ri-time-line"></i></div>
+                    <h3 data-i18n="services.emergency.title">Emergency Care</h3>
+                    <p data-i18n="services.emergency.description">24/7 emergency dental services available.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="section alt" id="why">
+        <div class="container">
+        <h2 class="section-title" data-i18n="whyChoose.title">Why Choose KEKE Dental?</h2>
+
+        <div class="why-grid">
+            <div class="why-list">
+            <div class="why-item">
+                <i class="ri-check-line"></i>
+                <div>
+                <h4 data-i18n="whyChoose.expertTeam.title">Expert Team</h4>
+                <p data-i18n="whyChoose.expertTeam.description">Experienced dentists and hygienists committed to the highest quality care.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <i class="ri-cpu-line"></i>
+                <div>
+                <h4 data-i18n="whyChoose.modernTech.title">Modern Technology</h4>
+                <p data-i18n="whyChoose.modernTech.description">State-of-the-art equipment and latest techniques for comfortable, effective treatment.</p>
+                </div>
+            </div>
+            <div class="why-item">
+                <i class="ri-calendar-check-line"></i>
+                <div>
+                <h4 data-i18n="whyChoose.flexibleScheduling.title">Flexible Scheduling</h4>
+                <p data-i18n="whyChoose.flexibleScheduling.description">Convenient appointment times including evenings and weekends to fit your schedule.</p>
+                </div>
+            </div>
+
+            <a href="login.html" target="_blank" rel="noopener noreferrer" class="btn small mt-16" onclick="alert('Please log in to book an appointment.')" data-i18n="whyChoose.scheduleVisit">Schedule Your Visit</a>
+            </div>
+
+            <div class="stats-grid">
+            <div class="stat-card">
+                <div class="big">1000+</div>
+                <span data-i18n="whyChoose.stats.happyPatients">Happy Patients</span>
+            </div>
+            <div class="stat-card">
+                <div class="big">15+</div>
+                <span data-i18n="whyChoose.stats.yearsExperience">Years Experience</span>
+            </div>
+            <div class="stat-card">
+                <div class="big">98%</div>
+                <span data-i18n="whyChoose.stats.successRate">Success Rate</span>
+            </div>
+            <div class="stat-card">
+                <div class="big">24/7</div>
+                <span data-i18n="whyChoose.stats.emergencyCare">Emergency Care</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Our Doctors -->
+    <!-- Meet Our Expert Team -->
+    <section class="doctors-section" id="doctors">
+        <div class="doctors-header" id="doctors-header">
+            <div class="container">
+                <h2 class="doctors-title" data-i18n="doctors.title">Meet Our Expert Team</h2>
+                <p class="doctors-subtitle" data-i18n="doctors.subtitle">
+                    Our experienced dentists are dedicated to providing you with the highest quality<br>
+                    dental care in a comfortable and friendly environment.
+                </p>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="doctors-controls">
+                <div class="search-box">
+                    <i class="ri-search-line"></i>
+                    <input type="text" data-i18n="doctors.searchPlaceholder" placeholder="Search doctors by name or specialty..." id="doctorSearch">
+                </div>
+                <div class="filter-dropdown">
+                    <i class="ri-filter-line"></i>
+                    <select id="specialtyFilter">
+                        <option value="all" data-i18n="doctors.filterAll">All</option>
+                        <option value="general" data-i18n="doctors.filterGeneral">General Dentistry</option>
+                        <option value="surgery" data-i18n="doctors.filterSurgery">Oral Surgery</option>
+                        <option value="orthodontics" data-i18n="doctors.filterOrthodontics">Orthodontics</option>
+                        <option value="pediatric" data-i18n="doctors.filterPediatric">Pediatric Dentistry</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- doctors choices -->
+            <div class="doctors-grid">
+                <!-- first placeholder -->
+                <div class="doctor-card" data-specialty="general">
+                    <div class="doctor-image">
+                        <img src="assets/wing_dentist.png" alt="placeholder1" style="object-position: center 25%;">
+                        <div class="availability-badge available" data-i18n="doctors.availableToday">Available Today</div>
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-header">
+                            <h3 class="doctor-name">Dr Beh Hoa Wing</h3>
+                            <div class="doctor-rating">
+                                <i class="ri-star-fill"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <p class="doctor-specialty" data-i18n="doctors.specialties.general">General Dentistry</p>
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="ri-map-pin-line"></i>
+                                <span data-i18n="doctors.locations.mainClinic">Main Clinic</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="ri-time-line"></i>
+                                <span data-i18n="doctors.experience.sixtynine">69 years experience</span>
+                            </div>
+                        </div>
+                        <p class="doctor-description" data-i18n="doctors.descriptions.beh">
+                            Dr. Beh specializes in fixing your teeth by watching Dental tutorials on YouTube. <br>
+                            Just trust him bro.
+                        </p>
+                        <a href="login.html" target="_blank" rel="noopener noreferrer" class="book-appointment-btn" data-i18n="doctors.bookAppointment">
+                            <i class="ri-calendar-line"></i>
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+
+                <!-- second placeholder -->
+                <div class="doctor-card" data-specialty="surgery">
+                    <div class="doctor-image">
+                        <img src="assets/yoon_dentist.png" alt="placeolder2" style="object-position: center 25%;">
+                        <div class="availability-badge next-week" data-i18n="doctors.nextWeek">Next Week</div>
+                    </div>
+                    <div class="doctor-info">
+                        <div class="doctor-header">
+                            <h3 class="doctor-name">Dr Yoon Hyukjin</h3>
+                            <div class="doctor-rating">
+                                <i class="ri-star-fill"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <p class="doctor-specialty" data-i18n="doctors.specialties.surgery">Oral Surgery</p>
+                        <div class="doctor-details">
+                            <div class="detail-item">
+                                <i class="ri-map-pin-line"></i>
+                                <span data-i18n="doctors.locations.surgeryCenter">Surgery Center</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="ri-time-line"></i>
+                                <span data-i18n="doctors.experience.sixtynine">69 years experience</span>
+                            </div>
+                        </div>
+                        <p class="doctor-description">
+                            Dr Yoon is a handsome South Korean dentist that makes you smile at all times. <br>
+                            Just trust him bro.
+                        </p>
+                        <a href="login.html" target="_blank" rel="noopener noreferrer" class="book-appointment-btn">
+                            <i class="ri-calendar-line"></i>
+                            Book Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get In Touch / CTA -->
+    <section class="cta" id="contact">
+        <div class="container cta-inner">
+        <h2 data-i18n="contact.title">Get In Touch</h2>
+        <p data-i18n="contact.subtitle">Ready to schedule your appointment? Contact us today!</p>
+
+        <div class="contact-cards">
+            <div class="contact-card">
+            <i class="ri-phone-line"></i>
+            <h4 data-i18n="contact.phone.title">Phone</h4>
+            <p data-i18n="contact.phone.number"> (555) 123-4567 </p>
+            </div>
+            <div class="contact-card">
+            <i class="ri-mail-line"></i>
+            <h4 data-i18n="contact.email.title">Email</h4>
+            <p data-i18n="contact.email.address"> info@kekedental.com </p>
+            </div>
+            <div class="contact-card">
+            <i class="ri-map-pin-line"></i>
+            <h4 data-i18n="contact.location.title">Location</h4>
+            <p data-i18n="contact.location.address"> 123 Main Street, City, 12345 </p>
+            </div>
+        </div>
+
+        <a href="login.html" target="_blank" rel="noopener noreferrer" class="btn btn-dark" data-i18n="contact.bookNow">Book Your Appointment Now</a>
+        </div>
+    </section>
+
+    <!-- Book (anchor only for buttons) -->
+    <section id="book" class="sr-only" aria-hidden="true"></section>
+    <section id="doctors" class="sr-only" aria-hidden="true"></section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p data-i18n="footer.copyright">© 2025 KEKE Dental. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer.privacy">Privacy</a>
+                <a href="#" data-i18n="footer.terms">Terms</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dr. Dashboard</title>
+
+    <!-- Icons (Remix Icon CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="doctor.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../assets/i18n/js/i18n.js" defer></script>
+    <script src="../script.js" defer></script>
+    <script src="doctor.js" defer></script>
+</head>
+
+<body>
+    <!-- Header / Nav -->
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="../index.html">
+                <i class="ri-shield-cross-line"></i>
+                <span>KEKE Dental</span>
+            </a>
+            <select id="language-select">
+                <option value="en">🇬🇧 English</option>
+                <option value="cn">🇨🇳 中文</option>
+                <option value="kr">🇰🇷 한국어</option>
+            </select>
+            <nav class="nav-links" id="navLinks">
+                <button onclick="logout()" class="btn btn-outline small" data-i18n="nav.logout">Logout</button>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Dashboard Header -->
+    <div class="dashboard-header">
+        <h1 data-i18n="doctorDashboard.welcome">Welcome Dr.</h1>
+        <p data-i18n="doctorDashboard.subtitle">Manage your appointments and view your dental care history</p>
+        <div class="user-info" style="margin-top: 10px; font-size: 0.9em; color: #666;">
+            <span><i class="ri-mail-line"></i> <span data-user-field="email">Loading...</span></span>
+            <span style="margin-left: 20px;"><i class="ri-phone-line"></i> <span data-user-field="phone">Loading...</span></span>
+        </div>
+    </div>
+
+    <!-- calendar to show appointments -->
+    <div class="doctor-calendar container">
+        <div class="calendar-header">
+            <button id="prevMonth" class="btn btn-outline">&lt;</button>
+            <h2 id="calendarMonth"></h2>
+            <button id="nextMonth" class="btn btn-outline">&gt;</button>
+        </div>
+        <div id="calendarGrid" class="calendar-grid" aria-label="Doctor appointments calendar"></div>
+        <div class="calendar-legend">
+            <span class="legend-item" data-i18n="doctorDashboard.calendarLegend.Scheduled">Scheduled</span>
+            <span class="legend-item" data-i18n="doctorDashboard.calendarLegend.Confirmed">Confirmed</span>
+            <span class="legend-item" data-i18n="doctorDashboard.calendarLegend.Completed">Completed</span>
+            <span class="legend-item" data-i18n="doctorDashboard.calendarLegend.Cancelled">Cancelled</span>
+        </div>
+    </div>
+
+    <!-- Appointments List Section -->
+    <div class="appointments-section container">
+        <div class="section-header">
+            <h2 data-i18n="doctorDashboard.appointmentsSection.title">Your Appointments</h2>
+            <div class="filter-controls">
+                <select id="statusFilter" class="form-select">
+                    <option value="all" data-i18n="doctorDashboard.appointmentsSection.statusFilter.all">All Status</option>
+                    <option value="scheduled" data-i18n="doctorDashboard.appointmentsSection.statusFilter.scheduled">Scheduled</option>
+                    <option value="confirmed" data-i18n="doctorDashboard.appointmentsSection.statusFilter.confirmed">Confirmed</option>
+                    <option value="completed" data-i18n="doctorDashboard.appointmentsSection.statusFilter.completed">Completed</option>
+                    <option value="cancelled" data-i18n="doctorDashboard.appointmentsSection.statusFilter.cancelled">Cancelled</option>
+                </select>
+                <select id="dateFilter" class="form-select">
+                    <option value="all" data-i18n="doctorDashboard.appointmentsSection.dateFilter.all">All Dates</option>
+                    <option value="today" data-i18n="doctorDashboard.appointmentsSection.dateFilter.today">Today</option>
+                    <option value="upcoming" data-i18n="doctorDashboard.appointmentsSection.dateFilter.upcoming">Upcoming</option>
+                    <option value="past" data-i18n="doctorDashboard.appointmentsSection.dateFilter.past">Past</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="appointmentsList" class="appointments-list">
+            <!-- Appointments will be loaded here -->
+        </div>
+        
+        <div id="emptyAppointments" class="empty-state" style="display: none;">
+            <i class="ri-calendar-line"></i>
+            <h3>No appointments found</h3>
+            <p>You don't have any appointments matching the selected filters.</p>
+        </div>
+    </div>
+
+
+    
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p data-i18n="footer.copyright">© 2025 KEKE Dental. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" data-i18n="footer.privacy">Privacy</a>
+                <a href="#" data-i18n="footer.terms">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
